@@ -1,0 +1,15 @@
+#!/bin/python
+
+with open("input.txt") as input_file:
+    li = {int(i.strip()) for i in input_file.readlines()}
+
+for i in li:
+    for ii in li:
+        if i == ii:
+            continue
+        for iii in li:
+            if iii == ii or iii == i:
+                continue
+            if i + ii + iii == 2020:
+                print(i * ii * iii)
+                exit()

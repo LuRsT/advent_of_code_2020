@@ -1,0 +1,10 @@
+#!/bin/python
+
+with open("input.txt") as input_file:
+    li = {int(i.strip()) for i in input_file.readlines()}
+
+for i in li:
+    r = 2020 - i
+    if r in li:
+        print(i * r)
+        exit()
