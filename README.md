@@ -8,3 +8,5 @@ Each directory is a day, each executable is a part, for example, to run part 1 o
 cd 1
 ./1
 ```
+
+Just a pull request
